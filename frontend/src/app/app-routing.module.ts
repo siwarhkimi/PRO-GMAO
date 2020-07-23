@@ -9,7 +9,6 @@ import { AddComponent } from './rm/workorder/add/add.component';
 import { EnQueueComponent } from './rm/workorder/en-queue/en-queue.component';
 
 import { EquipmentsComponent } from './rm/equipments/equipments.component';
-import { StockComponent } from './rm/stock/stock.component';
 import { WorkorderComponent } from './rm/workorder/workorder.component';
 import { CreateaccountComponent } from './rm/createaccount/createaccount.component';
 import { MachinslistComponent } from './rm/machines/machinslist/machinslist.component';
@@ -17,6 +16,7 @@ import { AddmachinsComponent } from './rm/machines/addmachins/addmachins.compone
 import { PreventionComponent } from './rm/machines/prevention/prevention.component';
 import { CorrectionComponent } from './rm/machines/correction/correction.component';
 //siw 
+//import { StockComponent } from './stock/stock.component';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { AuthGuard } from './_helpers';
@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: 'prevention', component: PreventionComponent },
   { path: 'correction', component: CorrectionComponent },
   { path: 'equipments', component: EquipmentsComponent },
-  { path: 'stock', component: StockComponent },
+
   { path: 'workorder', component: WorkorderComponent },
   { path: 'create', component: CreateaccountComponent },
   { path: 'EnQueueComponent', component: EnQueueComponent },

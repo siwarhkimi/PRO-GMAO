@@ -27,7 +27,7 @@ import { RsComponent } from './rs/rs.component';
 import { MainComponent } from './main/main.component';
 import { MachinesComponent } from './rm/machines/machines.component';
 import { EquipmentsComponent } from './rm/equipments/equipments.component';
-import { StockComponent } from './rm/stock/stock.component';
+
 import { WorkorderComponent } from './rm/workorder/workorder.component';
 import { CreateaccountComponent } from './rm/createaccount/createaccount.component';
 
@@ -56,7 +56,7 @@ import {WorkorderListService} from "./rm/workorder/workorder-list.service"
     MainComponent,
     MachinesComponent,
     EquipmentsComponent,
-    StockComponent,
+    
     WorkorderComponent,
     CreateaccountComponent,
     WorkOrderComponent,

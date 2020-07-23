@@ -30,7 +30,7 @@ app.use(cors());
 
 
 // use JWT auth to secure the api
-app.use(jwt());
+//app.use(jwt());
 
 // api routes
 app.use('/users', require('./users/users.controller'));
@@ -46,11 +46,8 @@ const addMachine = require("./routes/machinesRoutes/machinesRoute");
 const machineList = require("./routes/machinesRoutes/machinListRoute");
 const workorderList = require("./routes/workOrderRoutes/work-orderList");
 
+const stock = require('./routes/stock')
 
-
-
-const workOrder = require('./routes/workOrderRoutes/work-order');
-const addMachine = require("./routes/machinesRoutes/machinesRoute");
 
 
 
@@ -74,11 +71,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 //********************* */
 //*******routes******** */
-
 app.use(morgan("tiny"));
 //Use routes
 app.use("/api/addmachine", addMachine);
 app.use('/api/workOrder', workOrder)
 app.use('/api/machineList', machineList)
 app.use("/api/workorderList", workorderList)
+
+
+app.use('/stock', stock)
+
+
 app.listen(PORT, console.log(`server is running on port ${PORT}`));
